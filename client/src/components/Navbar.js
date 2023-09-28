@@ -2,7 +2,7 @@
 // Possible routes will be dasbhoard, profile, friends, and settings
 import "./Navbar.css";
 
-import { AiOutlineHome, AiOutlineUser, AiOutlineSetting } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineUser, AiOutlineSetting, AiOutlineTeam } from "react-icons/ai";
 export default function Navbar() {
   return (
     <nav id="navbar">
@@ -11,9 +11,9 @@ export default function Navbar() {
       {/* Profile Icon */}
       <AiOutlineUser className="nav-icon" />
       {/* Friends Icon */}
+      <AiOutlineTeam className="nav-icon" />
       {/* Settings Icon */}
       <AiOutlineSetting className="nav-icon" />
-      <h2>hi</h2>
     </nav>
   );
 }

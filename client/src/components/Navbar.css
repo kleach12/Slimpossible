@@ -8,13 +8,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
 }
 
 .nav-icon{
   font-size: 1.75em !important;
-  color: #1e1f2f;
+  color: #8588b1;
+  padding-bottom: 40px;
 
+}
+
+.nav-icon:first-child{
+  padding-top: 80px;
 }
 
 .nav-icon:hover{
