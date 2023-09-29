@@ -1,12 +1,17 @@
 #dashboard{
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-
+  margin-top: 100px;
 }
 
-#inner-dashboard{
+#left-dashboard{
+  display: flex;
+  margin-left: 100px;
+  width: 50%;
+  flex-direction: column;
+}
+#right-dashboard{
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
