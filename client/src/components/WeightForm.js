@@ -10,14 +10,14 @@ export default function WeightForm() {
   };
 
   const decrementWeight = () => {
-    if(weight > 0){
+    if (weight > 0) {
       setWeight(weight - 1);
     }
   };
 
   const incrementWeight = () => {
     setWeight(weight + 1);
-  }
+  };
 
   console.log(weight);
 
@@ -25,18 +25,19 @@ export default function WeightForm() {
     <div id="weight_form">
       <h3 id="weight_form_title"> Enter today's weight</h3>
       <form>
-        <div>
-          <table>
-            <tbody>
-            <tr>
-              <td onClick={decrementWeight}><AiOutlineMinus/></td>
-              <td>
-                <input value={weight} onChange={handleInputChange}></input>
-              </td>
-              <td onClick={incrementWeight}> <AiOutlinePlus/></td>
-            </tr>
-            </tbody>
-          </table>
+        <div id="weight_input">
+          <div id="minus_square" onClick={decrementWeight}>
+            <AiOutlineMinus id="minus" />
+          </div>
+          <input
+            id="weight_value"
+            value={weight}
+            onChange={handleInputChange}
+          ></input>
+          <div id="plus_square" onClick={incrementWeight}>
+            {" "}
+            <AiOutlinePlus id="plus" />
+          </div>
         </div>
       </form>
     </div>
