@@ -3,4 +3,31 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 15px;
   height: 25vh;
+  margin-right: 25px;
+  padding: 20px 10px ;
+  display: flex;
+  flex-direction: column !important;
+}
+
+#weight_form_title{
+  font-weight: 400;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 40px;
+}
+
+table {
+  border-collapse: collapse; /* Merge cell borders */
+  width: 100%;
+}
+
+/* Style for table borders */
+table, th, td {
+  border: 1px solid black; /* Add a 1px solid black border to the table and its cells */
+}
+
+/* Optional: Add padding and text alignment for better appearance */
+th, td {
+  padding: 8px; /* Add some padding inside the cells */
+  text-align: center; /* Center-align the text within cells */
 }
